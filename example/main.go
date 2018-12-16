@@ -1,13 +1,3 @@
-# Nio Logrus
-
-![](https://img.shields.io/travis/go-nio/niologrus.svg)
-
-
-This package contains logrus integration with nio and global requests logger middleware.
-
-## Getting started
-
-```go
 package main
 
 import (
@@ -37,4 +27,3 @@ func main() {
 
 	http.ListenAndServe(":9000", n)
 }
-```
