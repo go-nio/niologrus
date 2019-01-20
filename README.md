@@ -26,7 +26,7 @@ func main() {
 	logrusEntry := logrus.NewEntry(logger)
 
 	// set nio to use logrus as it's internal logger
-	n := nio.New(nio.SetLogger(logrusEntry))
+	n := nio.New(nio.WithLogger(logrusEntry))
 
 	// pass logrus middleware to nio
 	n.Use(niologrus.Middleware(logrusEntry))
